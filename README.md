@@ -41,7 +41,7 @@ To clone and run this project on your local machine, follow these steps:
 5. **Open your browser and navigate to:**
 
     ```
-    http://localhost:3000
+    http://localhost:5173
     ```
 
 ## Challenges
