@@ -3,7 +3,7 @@
 Welcome to the Dashboard project! This project is built using React and integrates with Auth0 for authentication. It displays market summaries, lists, and graphs using data from various APIs.
 ![Dashboard Preview](src/assets/img1.png)
 ![Dashboard Preview](src/assets/img2.png)
-![profile Preview](src/assets/img1.png)
+![profile Preview](src/assets/img3.png)
 ## Key Features
 
 - **Stock Price Display:** View the latest stock prices for various companies.
