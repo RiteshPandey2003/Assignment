@@ -12,7 +12,7 @@ const MarketList = () => {
       setError(null);
 
       try {
-        const API_KEY = 'sk_c022b1c07eff472fbe399a14bfacd73';
+        const API_KEY = import.meta.env.VITE_API_KEY2;
         const url = `https://api.iex.cloud/v1/data/core/sector_performance/market?token=${API_KEY}`;
 
         const response = await axios.get(url);
@@ -49,7 +49,7 @@ const MarketList = () => {
       <p className="text-gray-600 px-6 py-4 font-extrabold text-xl"> Sector Performance</p>
       <div className="market-list p-6 text-white text-sm flex justify-between w-full flex-col lg:flex-row">
         
-        <div className="market-items left-side-container flex flex-col items-center justify-between lg:w-1/2 md:flex-col shadow-md">
+        <div className="market-items flex flex-col items-center justify-between lg:w-1/2 md:flex-col ">
           {leftSideData.map((item, index) => (
             <div key={index} className="market-item p-2 w-full max-w-md flex justify-between items-center">
               <span className="font-medium">{item.name}</span>
@@ -61,7 +61,7 @@ const MarketList = () => {
             </div>
           ))}
         </div>
-        <div className="market-items right-side-container flex flex-col items-center justify-between lg:w-1/2 md:flex-col shadow-md">
+        <div className="market-items flex flex-col items-center justify-between lg:w-1/2 md:flex-col">
           {rightSideData.map((item, index) => (
             <div key={index} className="market-item p-2 w-full max-w-md flex justify-between items-center">
               <span className="font-medium">{item.name}</span>
