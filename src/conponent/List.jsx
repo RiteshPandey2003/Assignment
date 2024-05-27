@@ -12,7 +12,7 @@ const MarketList = () => {
       setError(null);
 
       try {
-        const API_KEY = import.meta.env.VITE_API_KEY2;
+        const API_KEY = 'sk_c022b1c07eff472fbe399a14bfacd73';
         const url = `https://api.iex.cloud/v1/data/core/sector_performance/market?token=${API_KEY}`;
 
         const response = await axios.get(url);
